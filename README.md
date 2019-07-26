@@ -12,6 +12,10 @@ Instalando o Projeto node express
 	npm install	
 	npm start
 
+Acessando o site
+
+http://168.62.172.36/store/deploy
+
 ## Opcionais
 
 Opcionalmente, faça o maior número possível dos itens abaixo:
