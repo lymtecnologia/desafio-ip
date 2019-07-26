@@ -14,8 +14,16 @@ Instalando o Projeto node express
 
 Acessando o site
 
+- Home
 http://<ip>/store/deploy
+
+- Download do csv
+http://<ip>/store/deploys.csv
+
+- GET para start do deploy
 http://<ip>/store/deploy?name=DEPLOY001&action=start
+
+-  GET para end do deploy com querystrings
 http://<ip>/store/deploy?name=DEPLOY001&action=stop&status=ok
 
 Criando o container
@@ -30,15 +38,21 @@ Criando o container
 Opcionalmente, faça o maior número possível dos itens abaixo:
 
   * Mongo
+  * Uso de SSL
+  * Chamadas POST
+  * Uso de segurança ou header de autenticacao
 
 Notas
 
 ## Entregável
 
   * Código fonte, arquivos de configuração etc em um repositório no github
+   
+  https://github.com/leoym/desafio-ip
 
 ## Diferenciais
 
-Analisaremos:
+Complementos
   - Resiliência e segurança
-
+  - APM
+  - Stress testing
