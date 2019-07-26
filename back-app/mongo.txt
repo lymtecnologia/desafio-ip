@@ -1,0 +1,19 @@
+   var device = req.query.device;
+   var nome = req.query.nome;
+   var lat = req.query.lat;
+   var lon = req.query.lon;
+   var stat = req.query.stat;
+   var temp = req.query.temp;
+   var data = new Date();
+   var MongoClient = require('mongodb').MongoClient
+   MongoClient.connect('mongodb://localhost:27017/iot_devices', function (err, client) {
+     if (err) throw err
+     var db = client.db('iot_devices')
+
+     var myobj = {data: data, device: device, nome: nome, status: stat, lat: lat, lon:lon, temp: temp };
+     db.collection("iot_iot").insertOne(myobj, function(err, res) {
+       if (err) throw err;
+         console.log("1 documento inserido");
+     });
+   })
+

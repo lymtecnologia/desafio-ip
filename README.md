@@ -16,6 +16,8 @@ Acessando o site
 
 http://168.62.172.36/store/deploy
 
+http://168.62.172.36/store/deploy?name=DEPLOY001&action=start
+http://168.62.172.36/store/deploy?name=DEPLOY001&action=stop&status=ok
 ## Opcionais
 
 Opcionalmente, faça o maior número possível dos itens abaixo:
