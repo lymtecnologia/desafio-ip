@@ -13,7 +13,7 @@ Opcionalmente, faça o maior número possível dos itens abaixo:
 
 Notas
 
-## Entregável:
+## Entregável
 
   * Código fonte, arquivos de configuração etc em um repositório no github
 
