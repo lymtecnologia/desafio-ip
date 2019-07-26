@@ -5,6 +5,13 @@ Desafio Intelipost
 
 Foi criar um servidor NodeJs conforme procedimentos abaixo:
 
+Instalando o Projeto node express
+
+	express --view=ejs back-app
+	cd back-app
+	npm install	
+	npm start
+
 ## Opcionais
 
 Opcionalmente, faça o maior número possível dos itens abaixo:
