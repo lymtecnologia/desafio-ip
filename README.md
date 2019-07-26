@@ -14,10 +14,17 @@ Instalando o Projeto node express
 
 Acessando o site
 
-http://168.62.172.36/store/deploy
+http://<ip>/store/deploy
+http://<ip>/store/deploy?name=DEPLOY001&action=start
+http://<ip>/store/deploy?name=DEPLOY001&action=stop&status=ok
 
-http://168.62.172.36/store/deploy?name=DEPLOY001&action=start
-http://168.62.172.36/store/deploy?name=DEPLOY001&action=stop&status=ok
+Criando o container
+
+	vi Dockerfile
+	docker build -t back-app .
+ 	docker run -p 3000:3000 -d back-app
+ 	docker ps -a
+
 ## Opcionais
 
 Opcionalmente, faça o maior número possível dos itens abaixo:
