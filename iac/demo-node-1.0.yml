@@ -1,0 +1,38 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: demo-node
+spec:
+  replicas: 2
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: demo-node
+    spec:
+      containers:
+      - name: demo-node
+        image: acr-xxxxx.azurecr.io/demo-node-1.0:v15.10
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 250m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-node
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: demo-node
+
