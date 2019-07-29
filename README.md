@@ -33,11 +33,13 @@ Criando o container
  	docker run -p 3000:3000 -d back-app
  	docker ps -a
 
+Foi criado um IAC com um exemplo de deploy no AKS - Kubernetes da Azure.
+
 ## Opcionais
 
-Opcionalmente, faça o maior número possível dos itens abaixo:
+Melhorias possíveis:
 
-  * Mongo
+  * Uso Mongo
   * Uso de SSL
   * Chamadas POST
   * Uso de segurança ou header de autenticacao
